@@ -24,7 +24,7 @@ def get_msg_of_ai(
         } for history in st.session_state.history
     ]
 
-    #현재메시지 추가
+    #현재메시지 추가 msg
     messages.append({
         "role":ROLE.user.name, #얘또한 바꿔줘야하지 history['role']이 아니라 ㅇㅇ 그리고 얘는 history['role].name이랑 정확히 똑같은 거임.
         "content": user_input
